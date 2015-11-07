@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Game_of_Life</RootNamespace>
     <AssemblyName>Game of Life</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvoRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvoRate.Designer.cs">
+      <DependentUpon>EvoRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridSize.Designer.cs">
+      <DependentUpon>GridSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StepBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepBy.Designer.cs">
+      <DependentUpon>StepBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurvivalSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurvivalSetting.Designer.cs">
+      <DependentUpon>SurvivalSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToggleSquareMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToggleSquareMenu.Designer.cs">
+      <DependentUpon>ToggleSquareMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="TopMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +85,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EvoRate.resx">
+      <DependentUpon>EvoRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSize.resx">
+      <DependentUpon>GridSize.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +99,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StepBy.resx">
+      <DependentUpon>StepBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurvivalSetting.resx">
+      <DependentUpon>SurvivalSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToggleSquareMenu.resx">
+      <DependentUpon>ToggleSquareMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TopMenu.resx">
       <DependentUpon>TopMenu.cs</DependentUpon>
     </EmbeddedResource>
